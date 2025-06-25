@@ -7,9 +7,13 @@ public class Main {
         
         String S = br.readLine();
         String T = br.readLine();
+
         
-        // T -> S
         while(true) {
+            if(T.length() < S.length()) {
+                System.out.println(0);
+                break;
+            }
             if(T.equals(S)) {
                 System.out.println(1);
                 break;
